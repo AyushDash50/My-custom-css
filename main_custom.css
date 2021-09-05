@@ -1,0 +1,249 @@
+@import url(https://css.reizu.moe/uwu/uwu.css);
+
+:root {
+	--text-color: blue;
+	--accent-color: #cfbfff;
+	--health-color: blue;
+	--ammo-color: blue;
+	--premium-color: #cfbfff;
+	--verified-color: #cfbfff;
+	--menu-bg-color: rgba(255, 255, 255, 1);
+	--menu-bg-color-secondary: rgba(230, 230, 230, 1);
+	--ingame-bg-color: rgba(15, 15, 15, .2);
+	--text-transform: none;
+}
+
+@font-face {
+	font-family: apple;
+	src: url(https://github.com/brentp/brentp.github.io/blob/master/dist/fonts/chancery/apple-chancery-webfont.woff);
+}
+
+#newsHolder {
+	display: none;
+}
+
+.topRightCounters {
+	position: unset;
+	bottom: unset;
+	right: unset;
+	color: blue;
+}
+
+.countIcon {
+	padding: 10px;
+}
+
+#killStreakHolder {
+    bottom: 150px;
+	color:blue;
+}
+
+#challIcon {
+	display: inline-block !important;
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	left: 50px;
+	bottom: 55px;
+	filter: brightness(0) invert(1) drop-shadow(2px 2px 3px rgba(30, 30, 30, .5));
+	color: blue;
+}
+
+#ammoIcon {
+	display: inline-block !important;
+	position: fixed;
+	width: 60px;
+	height: 70px;
+	right: 50px;
+	bottom: 55px;
+	margin-right: 0;
+	margin-left: 0;
+	filter: brightness(0) invert(1) drop-shadow(2px 2px 3px rgba(30, 30, 30, .5));
+	color: blue;
+	font-size: 100px;
+}
+
+#healthValue {
+	position: fixed;
+	left: 125px;
+	bottom: 25px;
+	font-size: 100px;
+	color: blue;
+}
+
+#ammoDisplay {
+	width: 70px;
+	height: 7px;
+	top: calc(50% + 35px);
+	left: calc(50% - 25px);
+	color : blue;
+}
+
+#ammoVal {
+	position: fixed;
+	font-size: 100px;
+	right: 125px;
+	bottom: 25px;
+	color: blue;
+}
+
+#weapDisplay {
+	display: none !important;
+	color: blue;
+}
+
+#reloadMsg {
+	
+	font-size: 100px;
+	color:blue;
+}
+
+#chatHolder {
+    bottom: 175px !important;
+    left: 20px !important;
+    border-radius: 10px;
+    background-color: var(--ingame-bg-color);
+}
+
+#uiBase.onMenu #chatHolder {
+    bottom: 20px !important
+}
+
+#timerDisplay {
+	width: 240px;
+	height: 80px;
+	background-color: var(--ingame-bg-color);
+	will-change: unset;
+	color :blue;
+}
+
+#timerVal {
+	font-size: 64px;
+	padding-left: 0;
+	will-change: unset;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+	color :blue;
+}
+
+#teamScores {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 685px;
+	height: 50px;
+	padding: 10px;
+	padding-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	margin-left: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color: transparent;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+.tScore {
+	display: inline-block;
+}
+
+#tScoreV1 {
+	position: fixed;
+	left: -25%;
+	top: 4px;
+}
+
+#tScoreV2 {
+	position: fixed;
+	left: 25%;
+	top: 4px;
+}
+
+.tScoreT {
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+	z-index: 2;
+}
+
+.tScoreM {
+	display: none;
+}
+
+.tScoreF {
+	left: 50%;
+	width: 100px;
+	height: 80px;
+	margin-left: 123px;
+	margin-right: 116px;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #eb5656;
+	color: transparent;
+	opacity: 50%;
+	z-index: 1;
+}
+
+.tScoreF.you {
+	background-color: #5699eb;
+	color: transparent;
+	opacity: 50%;
+	z-index: 1;
+	color :blue;
+}
+
+.tScoreC {
+	left: 50%;
+	width: 100px;
+	height: 80px;
+	margin-left: 123px;
+	margin-right: 116px;
+	background-color: var(--accent-color);
+	opacity: 50%;
+	z-index: 1;
+	color : blue;
+}
+
+.tScoreC.you {
+	background-color: #fff;
+	opacity: 50%;
+	z-index: 1;
+	color : blue;
+}
+
+#gameMessage {
+	top: 100px;
+	font-size: 18px;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+	color: blue;
+}
+
+#ingameFPS {
+	color: blue !important;
+	visibility: visible;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+	font-size: 70px;
+}
+
+#pingText {
+	color: blue !important;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+	font-size: 70px;
+}
+
+#pingIcon {
+	color: var(--accent-color) !important;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+	color: blue;
+}
+
+#pingDisplay .material-icons {
+	font-size: 70px;
+	color: blue;
+}
